@@ -1,0 +1,131 @@
+/* CreateEmployee Page Styles */
+
+.create-employee {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.create-employee h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.employee-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #93ad18;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(147, 173, 24, 0.25);
+}
+
+.form-group input.error,
+.form-group select.error {
+  border-color: #dc3545;
+}
+
+.form-group input.error:focus,
+.form-group select.error:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.error-message {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #dc3545;
+}
+
+/* Address Fieldset */
+.address-fieldset {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.address-fieldset legend {
+  font-weight: 600;
+  color: #333;
+  padding: 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #93ad18;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #7a9115;
+}
+
+.submit-btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(147, 173, 24, 0.5);
+}
+
+.submit-btn:active {
+  background-color: #5a6f08;
+}
+
+/* DatePicker container adjustments */
+.form-group .datepicker-container {
+  max-width: 100%;
+}
+
+.form-group .datepicker-container.error .datepicker-input {
+  border-color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-employee {
+    padding: 0 1rem;
+  }
+
+  .employee-form {
+    padding: 1.5rem;
+  }
+}
